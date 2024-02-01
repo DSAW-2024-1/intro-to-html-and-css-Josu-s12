@@ -3,29 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Young Serif' rel='stylesheet'>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Recipe page</title>
 
-  <!-- Puedes personalizar estos estilos o agregar tus propias hojas de estilo -->
+ <!--
+estilos
+ --> 
+ <div class="imagen"><img src="./assets/images/image-omelette.jpeg" alt="omelette"></div>
+ <style>
+  @font-face {
+    font-family: outside;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  }
+  p{font-family: outside;}
+  ul{font-family: outside;}
+  ol{font-family: outside;}
+ </style>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      margin: 20px;
-    }
+      
+     }
+    
 
     header {
       text-align: center;
       margin-bottom: 20px;
+      font-family: 'Young Serif';
+      font-weight:lighter;
+      
     }
 
+    .simp{
+      margin-left: 590px;
+      margin-right: 590px;
+    }
+
+    .margenizq{
+      margin-right: 450px;
+      margin-bottom: 100px;
+    }
+    .prep{
+      margin-right: 100px;
+    }
     main {
       max-width: 800px;
-      margin: 0 auto;
     }
 
     section {
-      margin-bottom: 30px;
+      margin-bottom: 100px;
     }
 
     h2 {
@@ -35,30 +62,85 @@
     .attribution {
       font-size: 11px;
       text-align: center;
-      margin-top: 20px;
       color: hsl(228, 45%, 44%);
+
+      ul {
+      list-style-position: inside;
+    }
+    }
+  </style>
+  <!--COLORES-->
+  <style>
+.in{
+  color: #7d4d3c;
+  font-family: 'Young Serif';
+  margin-right: 450px;
+  
+}
+.calorias{
+  color: #7d4d3c;
+  font-family: outside;
+  margin-right: 1000px;
+}
+.prep{
+  color:#7c4d60;
+  font-family: outside;
+}
+  </style>
+  <!--BACKGROUNDS-->
+
+  <style>
+    .imagen{
+      position: relative;
+      height: 580px;
+    }
+    img{
+      position:absolute;
+      top: 300px; ;
+      left: 640px;
+      width: 600px;
+      height: auto;
+      
+    }
+  
+    
+    header{
+      background-color:#ffffff ;
+      background-position-y: 50%;
+      
+    }
+    main{
+      background-color:#ffffff ;
+      margin-left: 590px;
+      margin-right: 590px;
+
+    }
+    body{
+      background-color:#f3e5d8 ;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header class="simp">
     <h1>Simple Omelette Recipe</h1>
-    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    <h7>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</h7>
   </header>
+  <div class="fondo"></div>
 
   <main>
-    <section>
-      <h2>Preparation Time</h2>
+    <section class="margenizq">
+      <h3 class="prep">Preparation Time</h3>
       <ul>
         <li>Total: Approximately 10 minutes</li>
         <li>Preparation: 5 minutes</li>
         <li>Cooking: 5 minutes</li>
       </ul>
+    
     </section>
 
-    <section>
-      <h2>Ingredients</h2>
+    <section >
+      <h2 class="in">Ingredients</h2>
       <ul>
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>
@@ -69,7 +151,7 @@
     </section>
 
     <section>
-      <h2>Instructions</h2>
+      <h2 class="in"> Instructions</h2>
       <ol>
         <li>Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
         <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -81,23 +163,24 @@
     </section>
 
     <section>
-      <h2>Nutrition</h2>
+      <h2 class="in">Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
       <table>
         <tr>
           <th>Calories</th>
-          <td>277kcal</td>
+          <td class="calorias">277kcal</td>
         </tr>
         <tr>
           <th>Carbs</th>
-          <td>0g</td>
+          <td class="calorias">0g</td>
         </tr>
         <tr>
           <th>Protein</th>
-          <td>20g</td>
+          <td class="calorias">20g</td>
         </tr>
         <tr>
           <th>Fat</th>
-          <td>22g</td>
+          <td class="calorias">22g</td>
         </tr>
       </table>
     </section>
@@ -105,7 +188,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Josue Sarmiento</a>.
   </div>
 </body>
 </html>
